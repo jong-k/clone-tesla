@@ -1,5 +1,8 @@
 # dressed to kill
-> `yarn` & `styled-components` boilerplate
+> `TypeScript` & `styled-components` boilerplate
+
+## 실행
+`yarn dev`
 
 ## 스타일드 컴포넌트(v5) 를 사용하는 이유
 ### 성능 측면
