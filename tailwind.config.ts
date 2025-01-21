@@ -16,6 +16,10 @@ export default {
         "top-banner": "linear-gradient(90deg, #e4c678 0, #f2e5c2 50%, #e8d199 100%)",
       },
     },
+    screens: {
+      tablet: "600px",
+      desktop: "1200px",
+    },
   },
   plugins: [],
 } satisfies Config;
