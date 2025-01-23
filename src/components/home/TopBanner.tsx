@@ -1,7 +1,9 @@
 import Link from "next/link";
 
 export default function TopBanner() {
+  // TODO: 버튼 링크 추가
   return (
+    // height: mobile: 72px, 나머지: 53px
     <section className="flex h-[72px] w-full flex-col items-center justify-center bg-top-banner tablet:h-[53px] tablet:flex-row">
       <div className="text-sm font-semibold">즉시 인도 가능한 Model Y&nbsp;</div>
       <div className="hidden items-center justify-center tablet:flex">
