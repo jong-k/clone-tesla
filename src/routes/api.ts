@@ -4,7 +4,8 @@ const router = Router();
 router.use(express.json());
 
 router.get("/", (req, res) => {
-  res.send({ message: "Hello from /api route" });
+  const message = req.query.message;
+  res.send({ message });
 });
 
 router.post("/", (req, res) => {
