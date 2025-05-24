@@ -1,20 +1,31 @@
 {
-  "name": "clone-tesla",
+  "name": "security-test",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jong-k/clone-tesla.git"
+    "url": "git+https://github.com/jong-k/security-test.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jong-k/clone-tesla/issues"
+    "url": "https://github.com/jong-k/security-test/issues"
   },
-  "homepage": "https://github.com/jong-k/clone-tesla#readme",
-  "description": ""
+  "homepage": "https://github.com/jong-k/security-test#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.21",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
 }
