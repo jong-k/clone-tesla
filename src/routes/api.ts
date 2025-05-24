@@ -4,7 +4,11 @@ const router = Router();
 router.use(express.json());
 
 router.get("/", (req, res) => {
-  const message = req.query.message;
+  let message = req.query.message;
+  if (!message) {
+    res.status(400);
+    message = "Message is required";
+  }
   res.send({ message });
 });
 
