@@ -4,10 +4,13 @@ const router = Router();
 router.use(express.json());
 
 router.get("/", (req, res) => {
+  res.setHeader("X-Timestamp", new Date().toISOString());
   let message = req.query.message;
+  const lang = req.headers["X-Lang"];
+
   if (!message) {
     res.status(400);
-    message = "Message is required";
+    message = lang === "en" ? "Message is required" : "메시지는 필수입니다";
   }
   res.send({ message });
 });
